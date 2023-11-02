@@ -8,11 +8,10 @@
 
 @section('scripts')
     <script>
-        // JavaScript code to handle the popup behavior
-        $(document).ready(function () {
-            $('.show-popup').click(function () {
-                $('.desktop-popup').modal('show');
+            $(document).ready(function() {
+                $('.bd-example-modal-lg').modal('show');
             });
-        });
     </script>
+
+
 @endsection

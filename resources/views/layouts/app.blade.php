@@ -14,20 +14,29 @@
         body {
             font-family: 'Hurme Geometric Sans', sans-serif;
         }
-        .card-1 {
-    display: none !important;
-}
-
-.title-mobile-description{
 
 
-display: none;
 
-}
+        .title-mobile-description {
 
-.card-3 {
-    display: none !important;
-}
+
+            display: none;
+
+        }
+
+        .card-3-mobile {
+
+            display: none !important;
+
+        }
+
+        .card-1-mobile {
+
+            display: none !important;
+
+        }
+
+
 
 
         .btn-continue {
@@ -79,7 +88,7 @@ display: none;
             border: none;
             width: 307px;
             height: 286px;
-            /* padding-top: 59px */
+
         }
 
         .card-text {
@@ -319,14 +328,6 @@ display: none;
             }
 
             .discount-bg {
-                /* background-color: #F6F8FB;
-                border-radius: 60px;
-                height: 50px;
-                width: 179px;
-                position: relative;
-                left: 184px;
-                top: -45px; */
-
 
                 background-color: #F6F8FB;
                 border-radius: 60px;
@@ -338,13 +339,6 @@ display: none;
             }
 
             .discount-bg span {
-                /* background-color: #F6F8FB;
-                border-radius: 60px;
-                height: 50px;
-                width: 179px;
-                position: relative;
-                left: 184px;
-                top: -45px; */
                 font-size: 12px;
             }
 
@@ -384,12 +378,7 @@ display: none;
 
             }
 
-            .txt-title {
-                bottom: 45px;
-                position: relative;
-                /* left: 100px; */
-                text-align: end !important;
-            }
+
 
             h5 {
                 font-weight: 900;
@@ -428,22 +417,71 @@ display: none;
             }
 
 
-            .title-mobile-description{
+            .title-mobile-description {
 
 
                 position: absolute;
-    top: 40px;
-    left: 6px;
+                top: 40px;
+                left: 6px;
 
             }
 
-            .title-mobile-description{
+            .title-mobile-description {
 
 
-display: flex;
+                display: flex;
 
-}
+            }
 
+            .title-mobile-description {
+
+
+                display: block;
+
+            }
+
+            .card-3 {
+                display: none !important;
+            }
+
+            .card-1 {
+                display: none !important;
+            }
+
+            .txt-title {
+                bottom: 50px;
+                position: relative;
+                /* left: 100px; */
+                text-align: end !important;
+                left: 10px;
+                font-size: 18px;
+            }
+
+            .discount-bg {
+                background-color: #F6F8FB;
+                border-radius: 60px;
+                height: 30px;
+                width: 155px;
+                position: relative;
+                left: 180px;
+                top: -72px;
+            }
+
+            .gradient-button {
+                padding: 0px 0px;
+            }
+
+            .card-3-mobile {
+
+                display: block !important;
+
+            }
+
+            .card-1-mobile {
+
+                display: block !important;
+
+            }
 
         }
     </style>
@@ -460,7 +498,7 @@ display: flex;
                 <div class="full-container">
 
                     <div class="modal-content">
-                        <div class="container-fluid" style="min-height: 70vh;padding: 30px">
+                        <div class="container-fluid" style="padding: 30px">
                             <div class="row justify-content-center align-items-center">
                                 <h4 class="modal-title custom-heading text-center">
                                     <span style="color: #2BC155;">Save Up to 60% </span> Changing Billing<br />
@@ -497,7 +535,7 @@ display: flex;
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="col-md-4 text-center card-2">
+                                        <div class="col-md-4 text-center card-2 ">
                                             <div class="card">
                                                 <div class="card-body">
 
@@ -505,12 +543,13 @@ display: flex;
 
                                                     <h5 class="row title-mobile"><span style="display: block;">
 
-                                                        Annual Plan
+                                                            Annual Plan
 
-                                                    </span>
-<br/>
+                                                        </span>
+                                                        <br />
                                                     </h5>
-                                                    <p class="card-text title-mobile-description">Invoiced every year</p>
+                                                    <p class="card-text title-mobile-description">Invoiced every year
+                                                    </p>
 
 
                                                     {{-- </div> --}}
@@ -563,8 +602,8 @@ display: flex;
                                                         src="{{ asset('images/arrow.jpg') }}">
                                                     <b>
                                                         <h5 class="card-title text-center txt-title">
-                                                            <s class="old-price" style="font-size: 15px;">$49.95 /mo</s>
-                                                            <span>$ 29.95 /mo</span>
+                                                            <s class="old-price" style="font-size: 15px;">$49.95/mo</s>
+                                                            <span>$ 29.95/mo</span>
                                                         </h5>
                                                     </b>
                                                     <button
@@ -578,9 +617,118 @@ display: flex;
                                             </div>
                                         </div>
 
+                                        <div class="col-md-4 text-center card-3 card-3-mobile">
+                                            <div class="card">
+                                                <div class="card-body">
+
+                                                    {{-- <div class="row"> --}}
+
+                                                    <h5 class="row title-mobile"><span style="display: block;">
+
+                                                        Quarterly plan
+
+                                                        </span>
+                                                        <br />
+                                                    </h5>
+                                                    <p class="card-text title-mobile-description">Invoiced every year
+                                                    </p>
+
+
+                                                    {{-- </div> --}}
+
+                                                    <button class="btn round-button top-btn">Annually</button>
+                                                    <div class="discount-bg">
+                                                        <button class="gradient-button">
+
+                                                            <div class="d-flex align-items-center">
+                                                                <img class="img-fluid"
+                                                                    style="max-height: 35px; max-width: 35px; margin-top: -7px;"
+                                                                    src="{{ asset('images/pres.jpg') }}"
+                                                                    alt="Discounted Image">
+                                                                <span class="ml-2">40% Discount</span>
+                                                            </div>
+                                                    </div>
+
+                                                    <img class="arrow-icon" width="90px" height="35px"
+                                                        src="{{ asset('images/arrow.jpg') }}">
+                                                    <b>
+
+                                                        <h5 class="card-title text-center txt-title">
+                                                            <s class="old-price" style="font-size: 15px;">$49.95
+                                                                /mo</s>
+                                                            <span>
+                                                                $ 29.95/mo
+                                                            </span>
+                                                        </h5>
+                                                    </b>
+                                                    <p></p>
+                                                    <p class="card-text inv-text">Invoiced every Quater</p>
+                                                    <hr>
+                                                    <button
+                                                        class="btn btn-success round-button btn-success-color">Continue</button>
+                                                </div>
+                                            </div>
+                                        </div>
+
+
+                                        <div class="col-md-4 text-center card-1 card-1-mobile">
+                                            <div class="card">
+                                                <div class="card-body">
+
+                                                    {{-- <div class="row"> --}}
+
+                                                   <b> <h5 class="row title-mobile"><span style="display: block;">
+
+                                                            Current Plan <span style="font-size: 15px">(Monthly)</span>
+
+                                                        </span>
+                                                        <br />
+                                                    </h5>
+                                                </b>
+                                                    <p class="card-text title-mobile-description">Invoiced every Month
+                                                    </p>
+
+
+                                                    {{-- </div> --}}
+
+                                                    <button class="btn round-button top-btn">Annually</button>
+                                                    <div class="discount-bg">
+                                                        <button class="gradient-button">
+
+                                                            <div class="d-flex align-items-center">
+                                                                <img class="img-fluid"
+                                                                    style="max-height: 35px; max-width: 35px; margin-top: -7px;"
+                                                                    src="{{ asset('images/pres.jpg') }}"
+                                                                    alt="Discounted Image">
+                                                                <span class="ml-2">60% Discount</span>
+                                                            </div>
+                                                    </div>
+
+                                                    <img class="arrow-icon" width="90px" height="35px"
+                                                        src="{{ asset('images/arrow.jpg') }}">
+                                                    <b>
+
+                                                        <h5 class="card-title text-center txt-title">
+                                                            <s class="old-price" style="font-size: 15px;">$49.95
+                                                                /mo</s>
+                                                            <span>
+                                                                $ 19.95 /mo
+                                                            </span>
+                                                        </h5>
+                                                    </b>
+                                                    <p></p>
+                                                    <p class="card-text inv-text">Invoiced every year</p>
+                                                    <hr>
+                                                    <button
+                                                        class="btn btn-success round-button btn-success-color">Continue</button>
+                                                </div>
+                                            </div>
+                                        </div>
+
                                     </div>
                                     <div class="row">
-                                        <p class="card-text container-fluid text-center  col-md-6 mt-3 mb-4">Please note
+                                        <p class="card-text container-fluid text-center  col-md-6 mt-3 mb-4">Please
+                                            note
                                             that after
                                             selecting your option, you'll be asked to confirm your choice in a second
                                             step.</p>
