@@ -334,9 +334,11 @@
                 height: 30px;
                 width: 155px;
                 position: relative;
-                left: 180px;
+                left: 105px;
                 top: -72px;
             }
+
+
 
             .discount-bg span {
                 font-size: 12px;
@@ -455,16 +457,6 @@
                 text-align: end !important;
                 left: 10px;
                 font-size: 18px;
-            }
-
-            .discount-bg {
-                background-color: #F6F8FB;
-                border-radius: 60px;
-                height: 30px;
-                width: 155px;
-                position: relative;
-                left: 180px;
-                top: -72px;
             }
 
             .gradient-button {
@@ -692,28 +684,22 @@
                                                     {{-- </div> --}}
 
                                                     <button class="btn round-button top-btn">Annually</button>
-                                                    <div class="discount-bg">
-                                                        <button class="gradient-button">
 
-                                                            <div class="d-flex align-items-center">
-                                                                <img class="img-fluid"
-                                                                    style="max-height: 35px; max-width: 35px; margin-top: -7px;"
-                                                                    src="{{ asset('images/pres.jpg') }}"
-                                                                    alt="Discounted Image">
-                                                                <span class="ml-2">60% Discount</span>
-                                                            </div>
-                                                    </div>
 
                                                     <img class="arrow-icon" width="90px" height="35px"
                                                         src="{{ asset('images/arrow.jpg') }}">
                                                     <b>
 
                                                         <h5 class="card-title text-center txt-title">
-                                                            <s class="old-price" style="font-size: 15px;">$49.95
-                                                                /mo</s>
+                                                            {{-- <s class="old-price" style="font-size: 15px;">$49.95
+                                                                /mo</s> --}}
+
                                                             <span>
-                                                                $ 19.95 /mo
+                                                                $ 49.95 /mo
                                                             </span>
+
+                                                                <pre> </pre>  {{-- $ 49.95 /mo --}}
+
                                                         </h5>
                                                     </b>
                                                     <p></p>
