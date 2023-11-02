@@ -6,28 +6,57 @@
 
     <!-- Include Bootstrap CSS -->
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
-    <link
+    {{-- <link
         href="https://fonts.googleapis.com/css2?family=Hurme+Geometric+Sans:ital,wght@0,400;0,700;0,900;1,400;1,700&display=swap"
-        rel="stylesheet">
-
+        rel="stylesheet"> --}}
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Hurme+Geometric+Sans:400,700">
     <style>
         body {
             font-family: 'Hurme Geometric Sans', sans-serif;
+        }
+        .card-1 {
+    display: none !important;
+}
+
+.title-mobile-description{
+
+
+display: none;
+
+}
+
+.card-3 {
+    display: none !important;
+}
+
+
+        .btn-continue {
+
+            display: none;
+
+
         }
 
         .txt {
 
             margin-bottom: 47px;
         }
-        .txt-title{
+
+        .title-mobile {
+
+            display: none;
+
+        }
+
+        .txt-title {
 
 
-        margin-bottom:37px;
+            margin-bottom: 37px;
 
 
         }
 
-        .card-one-price{
+        .card-one-price {
 
             margin-top: 67px;
         }
@@ -76,39 +105,26 @@
         .gradient-button {
             display: inline-block;
             padding: 10px 20px;
-            /* Adjust padding to control the button size */
             background: linear-gradient(to bottom, #7489F2, #3E55E4);
             -webkit-background-clip: text;
-            /* Apply gradient to text (for cross-browser compatibility) */
             background-clip: text;
-            /* Apply gradient to text */
             color: transparent;
-            /* Hide the original text color */
             border: none;
             border-radius: 60px;
-            /* Adds rounded corners, adjust as needed */
             cursor: pointer;
             font-size: 16px;
             transition: background 0.3s;
-            /* Add a smooth color transition on hover */
         }
 
         .sticky-text {
             position: fixed;
             top: 0;
-            /* Stick it to the top of the page */
             left: 50%;
-            /* Center it horizontally */
             transform: translateX(-50%);
-            /* Center it horizontally */
             background-color: #fff;
-            /* Background color for visibility */
             padding: 10px;
-            /* Adjust padding as needed */
             box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
-            /* Add a subtle shadow */
             z-index: 1000;
-            /* Ensure it's above other content */
         }
 
         .content-card {
@@ -116,7 +132,6 @@
         }
 
         .full-container {
-
             padding: 20px;
         }
 
@@ -129,11 +144,9 @@
             width: 130px;
             background-color: #2BC155;
             color: #fbf9ff;
-
         }
 
         .top-month-btn {
-
             margin-top: -67px;
             width: 130px;
             border: 2px solid #605E64;
@@ -249,7 +262,7 @@
         }
 
 
-        @media screen and (min-width: 992px) {
+        @media screen and (min-width: 993px) {
             .col-md-4 {
                 display: block;
                 margin-bottom: 20px;
@@ -262,7 +275,7 @@
 
         }
 
-        @media screen and (max-width: 992px) {
+        @media screen and (max-width: 993px) {
             .col-md-4 {
                 display: block;
                 margin-bottom: 20px;
@@ -306,27 +319,132 @@
             }
 
             .discount-bg {
-                background-color: #F6F8FB;
+                /* background-color: #F6F8FB;
                 border-radius: 60px;
                 height: 50px;
                 width: 179px;
                 position: relative;
                 left: 184px;
-                top: -45px;
-            }
+                top: -45px; */
 
 
-
-            .txt-title {
-                bottom: 29px;
+                background-color: #F6F8FB;
+                border-radius: 60px;
+                height: 30px;
+                width: 155px;
                 position: relative;
-                left: 100px;
+                left: 180px;
+                top: -72px;
             }
+
+            .discount-bg span {
+                /* background-color: #F6F8FB;
+                border-radius: 60px;
+                height: 50px;
+                width: 179px;
+                position: relative;
+                left: 184px;
+                top: -45px; */
+                font-size: 12px;
+            }
+
 
             .arrow-icon {
                 display: none;
 
-             }
+            }
+
+            .inv-text {
+                display: none;
+            }
+
+            hr {
+                display: none;
+            }
+
+            .old-price {
+
+
+                display: block;
+
+            }
+
+
+            .card-one-inv {
+
+
+                display: none;
+
+            }
+
+            .btn.btn-success.round-button {
+
+
+                display: none;
+
+            }
+
+            .txt-title {
+                bottom: 45px;
+                position: relative;
+                /* left: 100px; */
+                text-align: end !important;
+            }
+
+            h5 {
+                font-weight: 900;
+            }
+
+            .col-md-4 {
+
+                margin-bottom: -72px;
+
+            }
+
+            .btn.round-button.btn-success-color {
+
+                display: none;
+
+            }
+
+            .btn-continue {
+
+                display: inline;
+                min-width: 100%;
+                margin-top: -74px;
+                height: 45px;
+            }
+
+            .txt-title {
+
+                bottom: 62px;
+
+            }
+
+            .title-mobile {
+
+                display: flex;
+
+            }
+
+
+            .title-mobile-description{
+
+
+                position: absolute;
+    top: 40px;
+    left: 6px;
+
+            }
+
+            .title-mobile-description{
+
+
+display: flex;
+
+}
+
+
         }
     </style>
 </head>
@@ -363,7 +481,7 @@
                                 <br />
                                 <div class="container-fluid">
                                     <div class="row content-card">
-                                        <div class="col-md-4 text-center">
+                                        <div class="col-md-4 text-center card-1">
 
                                             <div class="card">
 
@@ -372,29 +490,53 @@
 
                                                     <h5 class="card-title txt-title card-one-price">$ 49.95
                                                         /mo</h5>
-                                                    <p class="card-text">Invoiced every year</p>
+                                                    <p class="card-text card-one-inv">Invoiced every year</p>
                                                     <hr>
                                                     <button class="btn btn-success round-button">Keep Monthly</button>
 
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="col-md-4 text-center">
+                                        <div class="col-md-4 text-center card-2">
                                             <div class="card">
                                                 <div class="card-body">
+
+                                                    {{-- <div class="row"> --}}
+
+                                                    <h5 class="row title-mobile"><span style="display: block;">
+
+                                                        Annual Plan
+
+                                                    </span>
+<br/>
+                                                    </h5>
+                                                    <p class="card-text title-mobile-description">Invoiced every year</p>
+
+
+                                                    {{-- </div> --}}
+
                                                     <button class="btn round-button top-btn">Annually</button>
                                                     <div class="discount-bg">
                                                         <button class="gradient-button">
 
-                                                            <img width="35px" height="35px" style="margin-top: -7px"
-                                                                src="{{ asset('images/pres.jpg') }}">
-                                                            60% Discount</button>
+                                                            <div class="d-flex align-items-center">
+                                                                <img class="img-fluid"
+                                                                    style="max-height: 35px; max-width: 35px; margin-top: -7px;"
+                                                                    src="{{ asset('images/pres.jpg') }}"
+                                                                    alt="Discounted Image">
+                                                                <span class="ml-2">60% Discount</span>
+                                                            </div>
                                                     </div>
+
                                                     <img class="arrow-icon" width="90px" height="35px"
                                                         src="{{ asset('images/arrow.jpg') }}">
                                                     <b>
+
                                                         <h5 class="card-title text-center txt-title">
-                                                            <s style="font-size: 15px;">$49.95 /mo</s> $ 19.95 /mo
+                                                            <s class="old-price" style="font-size: 15px;">$49.95 /mo</s>
+                                                            <span>
+                                                                $ 19.95 /mo
+                                                            </span>
                                                         </h5>
                                                     </b>
                                                     <p></p>
@@ -405,7 +547,7 @@
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="col-md-4 text-center">
+                                        <div class="col-md-4 text-center card-3">
                                             <div class="card">
                                                 <div class="card-body">
                                                     <button class="btn round-button top-btn">Quarterly</button>
@@ -420,11 +562,14 @@
                                                     <img class="arrow-icon" width="90px" height="35px"
                                                         src="{{ asset('images/arrow.jpg') }}">
                                                     <b>
-                                                        <h5 class="card-title text-center txt-title"
-                                                            >
-                                                            <s style="font-size: 15px;">$49.95 /mo</s> $ 29.95 /mo
+                                                        <h5 class="card-title text-center txt-title">
+                                                            <s class="old-price" style="font-size: 15px;">$49.95 /mo</s>
+                                                            <span>$ 29.95 /mo</span>
                                                         </h5>
                                                     </b>
+                                                    <button
+                                                        class="btn row btn-success-color btn-continue">Continue</button>
+
                                                     <p></p>
                                                     <p class="card-text inv-text">Invoiced every year</p>
                                                     <hr>
