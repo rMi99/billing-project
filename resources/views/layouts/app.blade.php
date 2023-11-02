@@ -19,6 +19,18 @@
 
             margin-bottom: 47px;
         }
+        .txt-title{
+
+
+        margin-bottom:37px;
+
+
+        }
+
+        .card-one-price{
+
+            margin-top: 67px;
+        }
 
         .custom-heading {
             font-family: 'Hurme Geometric Sans', sans-serif;
@@ -54,7 +66,7 @@
             background-color: #ffffff;
             color: #2BC155;
             border: 2px solid #2BC155;
-            border-radius: 20px;
+            border-radius: 60px;
             cursor: pointer;
             font-size: 16px;
             transition: background-color 0.3s;
@@ -73,7 +85,7 @@
             color: transparent;
             /* Hide the original text color */
             border: none;
-            border-radius: 5px;
+            border-radius: 60px;
             /* Adds rounded corners, adjust as needed */
             cursor: pointer;
             font-size: 16px;
@@ -130,7 +142,7 @@
 
         .discount-bg {
             background-color: #F6F8FB;
-            border-radius: 20px;
+            border-radius: 60px;
             height: 50px;
             width: 250px;
         }
@@ -182,7 +194,7 @@
 
             .discount-bg {
                 background-color: #F6F8FB;
-                border-radius: 20px;
+                border-radius: 60px;
                 height: 50px;
                 width: 179px;
             }
@@ -226,7 +238,7 @@
 
             .discount-bg {
                 background-color: #F6F8FB;
-                border-radius: 20px;
+                border-radius: 60px;
                 height: 50px;
                 width: 179px;
             }
@@ -248,19 +260,6 @@
             }
 
 
-            .arrow-icon {
-
-
-                display: none;
-
-            }
-
-            .arrow-icon {
-
-
-                display: none;
-
-            }
         }
 
         @media screen and (max-width: 992px) {
@@ -308,7 +307,7 @@
 
             .discount-bg {
                 background-color: #F6F8FB;
-                border-radius: 20px;
+                border-radius: 60px;
                 height: 50px;
                 width: 179px;
                 position: relative;
@@ -316,18 +315,18 @@
                 top: -45px;
             }
 
-            .arrow-icon {
 
-
-                display: none;
-
-            }
 
             .txt-title {
                 bottom: 29px;
                 position: relative;
                 left: 100px;
             }
+
+            .arrow-icon {
+                display: none;
+
+             }
         }
     </style>
 </head>
@@ -371,7 +370,7 @@
                                                 <div class="card-body">
                                                     <button class="btn round-button top-month-btn">Monthly</button>
 
-                                                    <h5 class="card-title txt-title" style="margin-top: 67px;">$ 49.95
+                                                    <h5 class="card-title txt-title card-one-price">$ 49.95
                                                         /mo</h5>
                                                     <p class="card-text">Invoiced every year</p>
                                                     <hr>
@@ -422,7 +421,7 @@
                                                         src="{{ asset('images/arrow.jpg') }}">
                                                     <b>
                                                         <h5 class="card-title text-center txt-title"
-                                                            style="margin-bottom: 47px;">
+                                                            >
                                                             <s style="font-size: 15px;">$49.95 /mo</s> $ 29.95 /mo
                                                         </h5>
                                                     </b>
