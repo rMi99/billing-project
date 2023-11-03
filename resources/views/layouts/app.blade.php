@@ -11,10 +11,14 @@
         rel="stylesheet"> --}}
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Hurme+Geometric+Sans:400,700">
     <style>
+
         body {
             font-family: 'Hurme Geometric Sans', sans-serif;
         }
+.old-price{
 
+    font-size: 15px;
+}
 
 
         .title-mobile-description {
@@ -82,12 +86,23 @@
         }
 
         .card {
-            background-image: url('images/Subtract-mobile-green-new.png');
+         
             background-size: 100% 100%;
             background-repeat: no-repeat;
             border: none;
             width: 307px;
             height: 286px;
+
+        }
+        .card-1-annul{
+
+   background-image: url('images/Subtract-mobile-green-new.png');
+
+        }
+
+                .card-1-monthly{
+
+   background-image: url('images/Subtract-mobile-grey-new.png');
 
         }
 
@@ -271,7 +286,7 @@
         }
 
 
-        @media screen and (min-width: 993px) {
+        @media screen and (min-width: 800px) {
             .col-md-4 {
                 display: block;
                 margin-bottom: 20px;
@@ -284,7 +299,7 @@
 
         }
 
-        @media screen and (max-width: 993px) {
+        @media screen and (max-width: 800px) {
             .col-md-4 {
                 display: block;
                 margin-bottom: 20px;
@@ -476,6 +491,280 @@
             }
 
         }
+
+        @media (max-width: 500px) {
+ .title-mobile{
+    font-size: 14px;
+  }
+  .title-mobile-description{
+    font-size: 9px;
+  }
+  .old-price{
+    font-size: 9px ;
+  }
+  .txt-title{
+    font-size: 12px ;
+  }
+
+.discount-bg {
+    background-color: #F6F8FB;
+    border-radius: 60px;
+    height: 30px;
+    width: 147px;
+    position: relative;
+    left: 37px;
+    top: -61px;
+}
+
+         .card {
+    background-image: url(images/Subtract-mobile-green-new.png);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    border: none;
+    width: 120px;
+    height: 100px;
+}
+
+
+
+}
+
+@media (max-width: 1000px) and (min-width: 764px) {
+
+            .col-md-4 {
+                display: block;
+                margin-bottom: 20px;
+            }
+
+            .modal-content {
+                margin: 0px;
+            }
+
+
+            .custom-heading {
+                font-size: 14px;
+            }
+
+            h4 {
+                font-size: 14px;
+            }
+
+            p {
+                font-size: 12px;
+
+            }
+
+            .card {
+                /* background-image: url('images/Subtract-mobile-green-new.png'); */
+                background-size: 0% 0%;
+                background-repeat: no-repeat;
+                border: none;
+                width: 100%;
+                height: 40%;
+                border: 1px solid #2BC155;
+            }
+
+            .btn.round-button.top-month-btn {
+                display: none;
+            }
+
+            .btn.round-button.top-btn {
+                display: none;
+
+            }
+
+            .discount-bg {
+
+                background-color: #F6F8FB;
+                border-radius: 60px;
+                height: 30px;
+                width: 155px;
+                position: relative;
+                left: 105px;
+                top: -72px;
+            }
+
+
+
+            .discount-bg span {
+                font-size: 12px;
+            }
+
+
+            .arrow-icon {
+                display: none;
+
+            }
+
+            .inv-text {
+                display: none;
+            }
+
+            hr {
+                display: none;
+            }
+
+            .old-price {
+
+
+                display: block;
+
+            }
+
+
+            .card-one-inv {
+
+
+                display: none;
+
+            }
+
+            .btn.btn-success.round-button {
+
+
+                display: none;
+
+            }
+
+
+
+            h5 {
+                font-weight: 900;
+            }
+
+            .col-md-4 {
+
+                margin-bottom: -72px;
+
+            }
+
+            .btn.round-button.btn-success-color {
+
+                display: none;
+
+            }
+
+            .btn-continue {
+
+                display: inline;
+                min-width: 100%;
+                margin-top: -74px;
+                height: 45px;
+            }
+
+            .txt-title {
+
+                bottom: 62px;
+
+            }
+
+            .title-mobile {
+
+                display: flex;
+
+            }
+
+
+            .title-mobile-description {
+
+
+                position: absolute;
+                top: 40px;
+                left: 6px;
+
+            }
+
+            .title-mobile-description {
+
+
+                display: flex;
+
+            }
+
+            .title-mobile-description {
+
+
+                display: block;
+
+            }
+
+            .card-3 {
+                display: none !important;
+            }
+
+            .card-1 {
+                display: none !important;
+            }
+
+            .txt-title {
+                bottom: 50px;
+                position: relative;
+                /* left: 100px; */
+                text-align: end !important;
+                left: 10px;
+                font-size: 18px;
+            }
+
+            .gradient-button {
+                padding: 0px 0px;
+            }
+
+            .card-3-mobile {
+
+                display: block !important;
+
+            }
+
+            .card-1-mobile {
+
+                display: block !important;
+
+            }
+
+        
+
+
+
+
+
+
+
+}
+
+/*@media (max-width: 992px) and (min-width: 764px) {
+    .card {
+        background-image: url(images/Subtract-mobile-green-new.png);
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+        border: none;
+        width: 120px;
+        height: 100px;
+    }
+    .top-month-btn{
+    height: 28px;
+    margin-top: -79px;
+    width: 64px;
+    font-size: 9px;
+    }
+    .top-btn{
+
+    height: 28px;
+    margin-top: -79px;
+    width: 64px;
+    font-size: 8px;
+
+    }
+    p{
+        font-size: 8px;
+    }
+    .custom-heading{
+
+
+font-size: 22px;
+
+    }
+}*/
+
     </style>
 </head>
 
@@ -513,7 +802,7 @@
                                     <div class="row content-card">
                                         <div class="col-md-4 text-center card-1">
 
-                                            <div class="card">
+                                            <div class="card card-1-monthly">
 
                                                 <div class="card-body">
                                                     <button class="btn round-button top-month-btn">Monthly</button>
@@ -528,7 +817,7 @@
                                             </div>
                                         </div>
                                         <div class="col-md-4 text-center card-2 ">
-                                            <div class="card">
+                                            <div class="card card-1-annul">
                                                 <div class="card-body">
 
                                                     {{-- <div class="row"> --}}
@@ -564,7 +853,7 @@
                                                     <b>
 
                                                         <h5 class="card-title text-center txt-title">
-                                                            <s class="old-price" style="font-size: 15px;">$49.95 /mo</s>
+                                                            <s class="old-price">$49.95 /mo</s>
                                                             <span>
                                                                 $ 19.95 /mo
                                                             </span>
@@ -579,7 +868,7 @@
                                             </div>
                                         </div>
                                         <div class="col-md-4 text-center card-3">
-                                            <div class="card">
+                                            <div class="card card-1-annul">
                                                 <div class="card-body">
                                                     <button class="btn round-button top-btn">Quarterly</button>
                                                     <div class="discount-bg">
@@ -594,7 +883,7 @@
                                                         src="{{ asset('images/arrow.jpg') }}">
                                                     <b>
                                                         <h5 class="card-title text-center txt-title">
-                                                            <s class="old-price" style="font-size: 15px;">$49.95/mo</s>
+                                                            <s class="old-price">$49.95/mo</s>
                                                             <span>$ 29.95/mo</span>
                                                         </h5>
                                                     </b>
@@ -646,7 +935,7 @@
                                                     <b>
 
                                                         <h5 class="card-title text-center txt-title">
-                                                            <s class="old-price" style="font-size: 15px;">$49.95
+                                                            <s class="old-price">$49.95
                                                                 /mo</s>
                                                             <span>
                                                                 $ 29.95/mo
